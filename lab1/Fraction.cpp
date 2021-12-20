@@ -10,11 +10,12 @@ private:
 public:
     Fraction();
     Fraction(const int &numerator_, const int &denominator_);
-    void input();
-    void output();
+    // void input();
+    // void output();
 
     // nạp chồng toán tử //
-
+    friend istream &operator>>(istream &is, Fraction &obj);
+    friend ostream &operator<<(ostream &os, Fraction obj);
     Fraction operator+(Fraction obj);
     Fraction operator-(Fraction obj);
     Fraction operator*(Fraction obj);
@@ -26,26 +27,29 @@ int main()
     Fraction a, b, c;
 
     cout << "\n\tNhap phan so a" << endl;
-    a.input();
+    cin >> a;
     cout << "\n\tNhap phan so obj" << endl;
-    b.input();
+    cin >> b;
 
     cout << "\n\t2 Phan so vua nhap" << endl;
-    a.output();
-    b.output();
+    cout << a;
+    cout << b;
 
     cout << "\n\n\t\tPhep cong" << endl;
     c = a + b;
-    c.output();
+    cout << c;
+
     cout << "\n\n\t\tPhep tru" << endl;
     c = a - b;
-    c.output();
+    cout << c;
+
     cout << "\n\n\t\tPhep nhan" << endl;
     c = a * b;
-    c.output();
+    cout << c;
+
     cout << "\n\n\t\tPhep chia" << endl;
     c = a / b;
-    c.output();
+    cout << c;
     return 0;
 }
 
@@ -58,19 +62,33 @@ Fraction::Fraction()
 Fraction::Fraction(const int &numerator_, const int &denominator_)
     : numerator(numerator_), denominator(denominator_) {}
 
-void Fraction::input()
+// void Fraction::input()
+// {
+//     cout << "\nNhap tu so: ";
+//     cin >> this->numerator;
+//     cout << "\nNhap mau so: ";
+//     cin >> this->denominator;
+// }
+
+istream &operator>>(istream &is, Fraction &obj)
 {
     cout << "\nNhap tu so: ";
-    cin >> this->numerator;
+    is >> obj.numerator;
     cout << "\nNhap mau so: ";
-    cin >> this->denominator;
+    is >> obj.denominator;
+    return is;
 }
 
-void Fraction::output()
+// void Fraction::output()
+// {
+//     cout << this->numerator << "/" << this->denominator << endl;
+// }
+
+ostream &operator<<(ostream &os, Fraction obj)
 {
-    cout << this->numerator << "/" << this->denominator << endl;
+    cout << obj.numerator << "/" << obj.denominator << endl;
+    return os;
 }
-
 Fraction Fraction::operator+(Fraction obj)
 {
     Fraction c;
