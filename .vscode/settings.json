@@ -1,23 +1,4 @@
 {
-  "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#c5aaff",
-    "activityBar.activeBorder": "#df4700",
-    "activityBar.background": "#c5aaff",
-    "activityBarBadge.background": "#df4700",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "sash.hoverBorder": "#c5aaff",
-    "statusBar.background": "#a277ff",
-    "statusBar.border": "#a277ff",
-    "statusBar.debuggingBackground": "#d4ff77",
-    "statusBar.debuggingBorder": "#d4ff77",
-    "statusBarItem.hoverBackground": "#7f44ff",
-    "statusBarItem.remoteBackground": "#a277ff",
-    "tab.activeBorder": "#c5aaff",
-    "titleBar.activeBackground": "#a277ff",
-    "titleBar.border": "#a277ff",
-    "titleBar.inactiveBackground": "#a277ff99"
-  },
-  "peacock.color": "#a277ff",
   "files.associations": {
     "new": "cpp",
     "iosfwd": "cpp",
