@@ -132,11 +132,11 @@ void inputDate(int &day, int &month, int &year) // hàm ngoài
 {
     do
     {
-        cout << "\nDate of birth (dd): ";
+        cout << "\nEnter Date of birth (dd): ";
         cin >> day;
-        cout << "\nMonth of birth (mm): ";
+        cout << "\nEnter Month of birth (mm): ";
         cin >> month;
-        cout << "\nYear of birht (yyyy): ";
+        cout << "\nEnter Year of birht (yyyy): ";
         cin >> year;
         if (!validDate(day, month, year))
         {
@@ -163,9 +163,9 @@ void Person::input()
 
 void Person::output()
 {
-    cout << "\nCMND: " << identityCard << endl;
-    cout << "Ho va ten: " << fullname << endl;
-    cout << "Ngay sinh: " << dateOfBirth.day << "/" << dateOfBirth.month << "/" << dateOfBirth.year << endl;
-    cout << "SDT: " << phoneNumber << endl;
-    cout << "Dia chi: " << address;
+    cout << "\nID card: " << identityCard << endl;
+    cout << "Full name: " << fullname << endl;
+    cout << "Day of birth: " << dateOfBirth.day << "/" << dateOfBirth.month << "/" << dateOfBirth.year << endl;
+    cout << "Phone Number: " << phoneNumber << endl;
+    cout << "Address: " << address;
 }
