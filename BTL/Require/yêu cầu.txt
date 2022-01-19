@@ -1,0 +1,20 @@
+			 Quản lí quán cà phê (tự viết)
+Một quán cà phê gồm có nhân viên, khách hàng thân thiết.
+nhân viên gồm: CMND, họmtên, SĐT, ngày sinh, địa chỉ, số ngày làm, lương.
+khách hàng thân thiết gồm: CMND, họ tên, SĐT, ngày sinh, địa chỉ, cà phê yêu thích, điểm tích luỹ.
+
+Viết một menu quản lí gồm : 
+1. Nhân viên
+	+ Xem danh sách nhân viên
+	+ Thêm 1 nhân viên
+	+ Xoá 1 nhân viên
+	+ Sắp xếp nhân viên theo số lương
+	+ 3 nhân siêng năng nhất tháng (số ngày làm cao nhất / tháng)
+	+ Những nhân viên đi làm ít nhất (dưới 5 ngày / tháng)
+2. Khách hàng
+	+ Xem danh sách khách hàng
+	+ Thêm 1 khách hàng
+	+ Xoá 1 khách hàng
+	+ Tìm kiếm khách hàng theo tên
+	+ 3 Khách hàng có điểm tích luỹ cao nhất của quý (3 tháng)
+	+ Xoá khách hàng có điểm tích luỹ < 30 (3 tháng)
