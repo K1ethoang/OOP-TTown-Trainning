@@ -123,7 +123,7 @@ bool validDate(int &day, int &month, int &year) // hàm ngoài
     else
     {
         if (day <= 28)
-            return 0;
+            return 1;
     }
     return 0;
 }

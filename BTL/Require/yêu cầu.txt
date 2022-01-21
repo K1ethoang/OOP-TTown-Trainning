@@ -9,12 +9,12 @@ Viết một menu quản lí gồm :
 	+ Thêm 1 nhân viên
 	+ Xoá 1 nhân viên
 	+ Sắp xếp nhân viên theo số lương
-	+ 3 nhân siêng năng nhất tháng (số ngày làm cao nhất / tháng)
-	+ Những nhân viên đi làm ít nhất (dưới 5 ngày / tháng)
+	+ Những nhân siêng năng nhất tháng ( > 18 ngày)
+	+ Xoá những nhân viên đi làm ít nhất ( < 5 ngày)
 2. Khách hàng
 	+ Xem danh sách khách hàng
 	+ Thêm 1 khách hàng
 	+ Xoá 1 khách hàng
 	+ Tìm kiếm khách hàng theo tên
-	+ 3 Khách hàng có điểm tích luỹ cao nhất của quý (3 tháng)
-	+ Xoá khách hàng có điểm tích luỹ < 30 (3 tháng)
+	+ Những khách hàng có điểm tích luỹ cao nhất ( > 40)
+	+ Xoá khách hàng có điểm tích luỹ ( < 10)
